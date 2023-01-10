@@ -16,6 +16,15 @@ module.exports = {
       'red': 'hsl(0deg 91% 63%)',
       'orange': 'hsl(13deg 95% 66%)',
       'yellow': 'hsl(42deg 91% 68%)',
+      },
+      fontFamily: {
+        jetbrainsmono: ['Jet Brains Mono', 'serif']
+      },
+      fontSize: {
+        body: ['1.125rem', '1.4375rem'],
+        title: ['1rem', '1.32rem'],
+        'heading-M': ['1.5rem', '2rem'],
+        'heading-L': ['2rem', '2.6875rem']
       }
     },
   },
