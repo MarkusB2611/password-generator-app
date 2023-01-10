@@ -5,7 +5,19 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    
+    extend: {
+      colors: {
+      'dark-grey': 'hsl(248deg 10% 15%)',
+      'grey': 'hsl(251deg 9% 53%)',
+      'almost-white': 'hsl(252deg 11% 91%)',
+      'very-dark-grey': 'hsl(248deg 15% 11%)',
+      'neon-green': 'hsl(127deg 100% 82%)',
+      'red': 'hsl(0deg 91% 63%)',
+      'orange': 'hsl(13deg 95% 66%)',
+      'yellow': 'hsl(42deg 91% 68%)',
+      }
+    },
   },
   plugins: [],
 }
