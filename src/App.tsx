@@ -4,7 +4,7 @@ import Button from "./components/UI/button"
 function App() {
 
   return (
-    <main className="flex flex-col justify-center items-center min-h-screen">
+    <main>
       <PasswordGenerator />
     </main>
   )
