@@ -15,10 +15,30 @@ const PasswordSettings = ({
         value={settings.length}
         setValue={changeSettings}
       />
-      <Checkbox id="useUppercase" label="Include Uppercase Letters" />
-      <Checkbox id="useLowercase" label="Include Lowercase Letters" />
-      <Checkbox id="useNumbers" label="Include Numbers" />
-      <Checkbox id="useSymbols" label="Include Symbols" />
+      <Checkbox
+        id="useUppercase"
+        label="Include Uppercase Letters"
+        value={settings.useUppercase}
+        setValue={changeSettings}
+      />
+      <Checkbox
+        id="useLowercase"
+        label="Include Lowercase Letters"
+        value={settings.useLowercase}
+        setValue={changeSettings}
+      />
+      <Checkbox
+        id="useNumbers"
+        label="Include Numbers"
+        value={settings.useNumbers}
+        setValue={changeSettings}
+      />
+      <Checkbox
+        id="useSymbols"
+        label="Include Symbols"
+        value={settings.useSymbols}
+        setValue={changeSettings}
+      />
       <Button>Generate</Button>
     </div>
   );
