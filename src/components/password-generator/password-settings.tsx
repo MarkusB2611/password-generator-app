@@ -15,7 +15,8 @@ const PasswordSettings = ({
         value={settings.length}
         setValue={changeSettings}
       />
-      <Checkbox
+      <div className="flex flex-col gap-4 mt-8 mb-8">
+        <Checkbox
         id="useUppercase"
         label="Include Uppercase Letters"
         value={settings.useUppercase}
@@ -39,6 +40,8 @@ const PasswordSettings = ({
         value={settings.useSymbols}
         setValue={changeSettings}
       />
+      </div>
+      
       <Button>Generate</Button>
     </div>
   );
