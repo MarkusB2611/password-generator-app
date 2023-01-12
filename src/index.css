@@ -7,7 +7,13 @@
     src: url("/fonts/JetBrainsMono-Bold.ttf");
   }
 
+
   @layer components {
+
+    .checkbox {
+      -webkit-appearance: none;
+    }
+
     .slider {
       background: theme('colors.very-dark-grey');
       width: 100%;

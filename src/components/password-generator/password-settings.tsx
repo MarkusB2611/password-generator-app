@@ -1,6 +1,7 @@
 import React from "react";
 import { Settings } from ".";
 import Button from "../UI/button";
+import Checkbox from "../UI/checkbox";
 import Slider from "../UI/slider";
 
 const PasswordSettings = ({
@@ -14,6 +15,8 @@ const PasswordSettings = ({
         value={settings.length}
         setValue={changeSettings}
       />
+      <Checkbox id="useUppercase" label="Include Uppercase Letters" />
+      <Checkbox id="useLowercase" label="Include Lowercase Letters" />
       Include Uppercase Letters Include Lowercase Letters Include Numbers
       Include Symbols Strength
       <Button>Generate</Button>
