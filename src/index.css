@@ -11,7 +11,19 @@
   @layer components {
 
     .checkbox {
-      -webkit-appearance: none;
+      box-sizing: border-box;
+      appearance: none;
+      background-color: theme('colors.very-dark-grey');
+      height: theme('spacing.5');
+      width: theme('spacing.5');;
+      position: relative;
+      cursor: pointer;
+      border: 2px solid theme('colors.almost-white')
+    }
+
+    .checkbox:checked {
+      background: url('/images/checked.svg');
+      border: none;
     }
 
     .slider {
