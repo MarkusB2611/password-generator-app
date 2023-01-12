@@ -3,19 +3,20 @@ import { Settings } from ".";
 import Button from "../UI/button";
 import Checkbox from "../UI/checkbox";
 import Slider from "../UI/slider";
+import PasswordStrength from "./password-strength";
 
 const PasswordSettings = ({
   settings,
   changeSettings,
 }: PasswordSettingsProps) => {
   return (
-    <div className="w-full bg-dark-grey p-4">
+    <div className="w-full bg-dark-grey p-4 flex flex-col gap-8">
       <Slider
         id="Character Length"
         value={settings.length}
         setValue={changeSettings}
       />
-      <div className="flex flex-col gap-4 mt-8 mb-8">
+      <div className="flex flex-col gap-4">
         <Checkbox
         id="useUppercase"
         label="Include Uppercase Letters"
@@ -41,6 +42,7 @@ const PasswordSettings = ({
         setValue={changeSettings}
       />
       </div>
+      <PasswordStrength />
       
       <Button>Generate</Button>
     </div>
