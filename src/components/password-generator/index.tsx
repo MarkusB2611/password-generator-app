@@ -5,11 +5,11 @@ import PasswordDisplay from "./password-display";
 const PasswordGenerator = () => {
   const [password, setPassword] = useState("");
   const [settings, setSettings] = useState<Settings>({
-    length: 10,
-    useUppercase: true,
-    useLowercase: true,
-    useNumbers: true,
-    useSymbols: true,
+    length: 0,
+    useUppercase: false,
+    useLowercase: false,
+    useNumbers: false,
+    useSymbols: false,
   });
   return (
     <div className="flex flex-col justify-center items-center min-h-screen px-4 gap-4">
