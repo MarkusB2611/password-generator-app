@@ -17,8 +17,8 @@ const PasswordSettings = ({
       />
       <Checkbox id="useUppercase" label="Include Uppercase Letters" />
       <Checkbox id="useLowercase" label="Include Lowercase Letters" />
-      Include Uppercase Letters Include Lowercase Letters Include Numbers
-      Include Symbols Strength
+      <Checkbox id="useNumbers" label="Include Numbers" />
+      <Checkbox id="useSymbols" label="Include Symbols" />
       <Button>Generate</Button>
     </div>
   );
