@@ -9,6 +9,8 @@ const PasswordSettings = ({
   settings,
   changeSettings,
 }: PasswordSettingsProps) => {
+
+
   return (
     <div className="w-full bg-dark-grey p-4 flex flex-col gap-8">
       <Slider
@@ -42,7 +44,7 @@ const PasswordSettings = ({
         setValue={changeSettings}
       />
       </div>
-      <PasswordStrength />
+      <PasswordStrength calculatedStrength={0} />
       
       <Button>Generate</Button>
     </div>
