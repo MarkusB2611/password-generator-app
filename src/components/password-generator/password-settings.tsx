@@ -8,6 +8,7 @@ import PasswordStrength from "./password-strength";
 const PasswordSettings = ({
   settings,
   changeSettings,
+  generatePassword
 }: PasswordSettingsProps) => {
 
   const calculatePasswordStrength = () => {
@@ -60,7 +61,7 @@ const PasswordSettings = ({
       </div>
       <PasswordStrength calculatedStrength={calculatePasswordStrength()} />
       
-      <Button disabled={calculatePasswordStrength() === 0}>Generate</Button>
+      <Button disabled={calculatePasswordStrength() === 0} onClick={generatePassword}>Generate</Button>
     </div>
   );
 };
@@ -68,6 +69,7 @@ const PasswordSettings = ({
 type PasswordSettingsProps = {
   settings: Settings;
   changeSettings: React.Dispatch<React.SetStateAction<Settings>>;
+  generatePassword: () => void
 };
 
 export default PasswordSettings;
