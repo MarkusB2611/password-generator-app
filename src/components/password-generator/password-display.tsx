@@ -3,6 +3,10 @@ import IconCopy from "../../assets/icon-copy";
 const PasswordDisplay = ({ password }: PasswordDisplayProps) => {
   const isPasswordNotEmpty = password !== "";
 
+  const savePasswordToClipboard = () => {
+    
+  }
+
   return (
     <div
       className={`text-almost-white  px-4 py-4 bg-dark-grey w-full flex justify-between items-center text-heading-M`}
@@ -10,7 +14,7 @@ const PasswordDisplay = ({ password }: PasswordDisplayProps) => {
       <span className={`${isPasswordNotEmpty ? "" : "opacity-25"}`}>
         {isPasswordNotEmpty ? password : "P4$5W0rD!"}
       </span>
-      <IconCopy className="text-neon-green hover:text-almost-white" />
+      <IconCopy className="text-neon-green hover:text-almost-white" onClick={savePasswordToClipboard} />
     </div>
   );
 };

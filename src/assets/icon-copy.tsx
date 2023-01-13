@@ -1,7 +1,8 @@
-const IconCopy = ({ className }: IconCopyProps) => {
+const IconCopy = ({ className, onClick }: IconCopyProps) => {
   return (
     <svg
       className={className}
+      onClick={onClick}
       role="button"
       width="21"
       height="24"
@@ -15,6 +16,7 @@ const IconCopy = ({ className }: IconCopyProps) => {
 
 type IconCopyProps = {
   className?: string;
+  onClick: () => void
 };
 
 export default IconCopy;
