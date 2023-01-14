@@ -11,11 +11,13 @@ const Slider = ({ id, value, setValue }: sliderProps) => {
 
   return (
     <div className="w-full">
-      <div className="flex justify-between mb-2 ">
-        <label htmlFor={id} className="text-base">
+      <div className="flex justify-between mb-2 sm:mb-4">
+        <label htmlFor={id} className="text-base sm:text-body">
           {id}
         </label>
-        <span className="text-heading-M text-neon-green">{value}</span>
+        <span className="text-heading-M sm:text-heading-L text-neon-green">
+          {value}
+        </span>
       </div>
       <input
         type="range"

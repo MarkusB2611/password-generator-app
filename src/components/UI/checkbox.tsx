@@ -2,7 +2,7 @@ import { Settings } from "../password-generator";
 
 const Checkbox = ({ id, label, value, setValue }: CheckboxProps) => {
   return (
-    <div className="flex gap-5 items-center">
+    <div className="flex gap-5 sm:gap-6 items-center">
       <input
         className="checkbox"
         type="checkbox"
@@ -12,7 +12,7 @@ const Checkbox = ({ id, label, value, setValue }: CheckboxProps) => {
           setValue((prev) => ({ ...prev, [id]: e.target.checked }))
         }
       />
-      <label className="text-base" htmlFor={id}>
+      <label className="text-base sm:text-body" htmlFor={id}>
         {label}
       </label>
     </div>

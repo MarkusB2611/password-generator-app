@@ -1,13 +1,12 @@
-import PasswordGenerator from "./components/password-generator"
-import Button from "./components/UI/button"
+import PasswordGenerator from "./components/password-generator";
+import Button from "./components/UI/button";
 
 function App() {
-
   return (
-    <main>
+    <main className="sm:flex sm:justify-center sm:items-center">
       <PasswordGenerator />
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
