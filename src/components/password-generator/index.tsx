@@ -77,7 +77,6 @@ const PasswordGenerator = () => {
           char = charSet[Math.floor(Math.random() * charSet.length)];
         }
       }
-      console.log(Math.random() * charSet.length);
       password += char;
     }
     setPassword(password);
