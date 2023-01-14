@@ -113,7 +113,7 @@
     /*Chrome*/
     @media screen and (-webkit-min-device-pixel-ratio: 0) {
       .slider {
-        --percent: 0%;
+        --percent: 75%;
         background: linear-gradient(
           to right,
           theme('colors.neon-green') 0%,
