@@ -13,6 +13,7 @@ const PasswordStrength = ({ calculatedStrength }: PasswordStrengthProps) => {
       <div
         className={`h-7 w-[10px] my-[0.875rem] sm:my-[1.375rem]
         ${i >= calculatedStrength ? "border-almost-white border-2" : ""}
+        // @ts-ignore
         ${i < calculatedStrength ? colors[calculatedStrength].color : ""}
     `}
       ></div>
@@ -24,6 +25,7 @@ const PasswordStrength = ({ calculatedStrength }: PasswordStrengthProps) => {
       <span className="text-base sm:text-body text-grey">STRENGTH</span>
       <div className="flex gap-2 items-center">
         <span className="mr-2 text-body sm:text-heading-M">
+          // @ts-ignore
           {colors[calculatedStrength].text}
         </span>
         {rectangles}
